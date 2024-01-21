@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+<h2>Benvenuto, <span th:text="${username}"></span>!</h2>
+<a th:href="@{/aggiungi_libro}">Aggiungi Libro</a>
+<ul>
+    <li th:each="libro : ${libri}">
+        <span th:text="${libro.titolo} + ' - ' + ${libro.autore}"></span>
+    </li>
+</ul>
+</body>
+</html>

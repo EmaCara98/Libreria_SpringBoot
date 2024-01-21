@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="/dashboard" method="get">
+    Username: <input type="text" name="username" required minlength="5"><br>
+    Password: <input type="password" name="password" required minlength="5"><br>
+    <input type="submit" value="Login">
+</form>
+<a th:href="@{/registrazione}">Non hai un account? Registrati ora!</a>
+</body>
+</html>

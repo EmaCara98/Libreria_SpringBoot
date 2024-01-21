@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrazione</title>
+</head>
+<body>
+<form action="/registra" method="post">
+    Username: <input type="text" name="username" required minlength="5"><br>
+    Password: <input type="password" name="password" required minlength="5"><br>
+    <input type="submit" value="Register">
+</form>
+<a th:href="@{/login}">Go to Login</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggiungi Libro</title>
+</head>
+<body>
+<h2>Aggiungi Libro</h2>
+<form action="/sincronizza" method="post">
+    <input type="submit" value="Sincronizza Libri">
+</form>
+<ul>
+    <li th:each="libro : ${allBooks}">
+        <span th:text="${libro.titolo} + ' - ' + ${libro.autore}"></span>
+        <a th:href="@{/dettagli_libro/{id}(id=${libro.id})}">Dettagli</a>
+    </li>
+</ul>
+</body>
+</html>

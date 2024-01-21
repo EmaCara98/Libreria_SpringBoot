@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dettagli Libro</title>
+</head>
+<body>
+<h2>Dettagli Libro</h2>
+<p>Titolo: <span th:text="${libro.titolo}"></span></p>
+<p>Autore: <span th:text="${libro.autore}"></span></p>
+<p>Anno di Pubblicazione: <span th:text="${libro.annoPubblicazione}"></span></p>
+<p>Prezzo: <span th:text="${libro.prezzo}"></span></p>
+<form action="/aggiungi_libro/{id}" method="post">
+    <input type="submit" value="Aggiungi ai miei libri">
+</form>
+</body>
+</html>
